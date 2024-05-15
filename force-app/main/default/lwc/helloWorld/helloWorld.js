@@ -40,20 +40,6 @@ export default class HelloWorld extends LightningElement {
   renderedCallback() {
     console.log('typeof pfelement next:', typeof PFElement);
     console.log('typeof pre-icon next:', typeof PfeIcon);
-
-    const container = this.template.querySelector('.js-pfe-nav-container');
-    if (container) {
-      // Intended markup: <pfe-icon icon="web-icon-user" size="sm" aria-hidden="true"></pfe-icon>
-      const pfeIcon = document.createElement('pfe-icon');
-      pfeIcon.setAttribute('icon', 'web-icon-user');
-      pfeIcon.setAttribute('size', 'sm');
-      pfeIcon.setAttribute('aria-hidden', 'true');
-
-      container.appendChild(pfeIcon);
-    }
-    else {
-      console.log('missing element ".js-pfe-nav-container" (in renderedCallback)');
-    }
   }
 
   // Attempt #2)
