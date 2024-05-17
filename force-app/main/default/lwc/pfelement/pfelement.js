@@ -625,10 +625,7 @@ class PFElement extends HTMLElement {
     // template updates.
     this._rendered = false;
 
-    console.log('will call "render"');
-    debugger;
     if (!delayRender) this.render();
-    console.log('did call "render"');
   }
 
   /**
@@ -707,11 +704,8 @@ class PFElement extends HTMLElement {
    * Standard render function.
    */
   render() {
-    console.log('To call: this.shadowRoot.innerHTML');
     this.shadowRoot.innerHTML = "";
-    console.log('To call: this.template.innerHTML');
     this.template.innerHTML = this.html;
-    console.log('called both');
 
     if (window.ShadyCSS) {
       window.ShadyCSS.prepareTemplate(this.template, this.tag);

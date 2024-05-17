@@ -1,6 +1,7 @@
 {
   "orgName": "chhill company",
   "edition": "Developer",
+  "release": "preview",
   "features": ["EnableSetPasswordInApi"],
   "settings": {
     "lightningExperienceSettings": {

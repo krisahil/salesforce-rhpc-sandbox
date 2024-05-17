@@ -1,12 +1,12 @@
 import { LightningElement, api } from 'lwc';
-import { loadStyle, loadScript } from "lightning/platformResourceLoader";
+// import { loadStyle, loadScript } from "lightning/platformResourceLoader";
 // This is a .zip file containing some elements from ux.redhat.com repo. It's this folder zipped up:
 // https://gitlab.cee.redhat.com/dxp/dat/modules/red_hat_shared_libs/-/tree/1.6.0/dist
-import rhsl from '@salesforce/resourceUrl/red_hat_shared_libs_dist';
+// import rhsl from '@salesforce/resourceUrl/red_hat_shared_libs_dist';
 // This is a .zip file containing only a few elements from that repo, but all
 // `import` statements have been removed, so that we can try to load them with
 // `loadScript()`.
-import rhsl_no_imports from '@salesforce/resourceUrl/red_hat_shared_libs_dist_no_imports';
+// import rhsl_no_imports from '@salesforce/resourceUrl/red_hat_shared_libs_dist_no_imports';
 // We're using require.js because we're trying to use the UMD versions of the
 // web components JS.  We'd rather use es6 module imports; see below for why
 // those aren't working.

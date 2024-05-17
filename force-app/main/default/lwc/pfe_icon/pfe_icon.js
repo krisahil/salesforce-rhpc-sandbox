@@ -261,7 +261,6 @@ class PfeIcon extends PFElement {
   }
 
   constructor() {
-    console.log('in PfeIcon constructor!');
     super(PfeIcon, { type: PfeIcon.PfeType });
 
     this._iconLoad = this._iconLoad.bind(this);
