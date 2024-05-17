@@ -24,6 +24,8 @@ import { LightningElement, api } from 'lwc';
 import PFElement from 'c/pfelement';
 // Source: https://www.npmjs.com/package/@patternfly/pfe-icon
 import PfeIcon from 'c/pfe_icon';
+import RhSiteSwitcher from 'c/rh_site_switcher';
+import PfeAvatar from 'c/pfe_avatar';
 
 export default class HelloWorld extends LightningElement {
   @api name;
@@ -38,8 +40,13 @@ export default class HelloWorld extends LightningElement {
   // enforcing a value of closed on the ShadowRoot's mode property for all
   // components."
   renderedCallback() {
-    console.log('typeof pfelement next:', typeof PFElement);
-    console.log('typeof pre-icon next:', typeof PfeIcon);
+    console.log(
+      'RH web components: ',
+      'typeof PFElement: ' + typeof PFElement,
+      'typeof PfeIcon: ' + typeof PfeIcon,
+      'typeof RhSiteSwitcher: ' + typeof RhSiteSwitcher,
+      'typeof PfeAvatar: ' + typeof PfeAvatar,
+    );
   }
 
   // Attempt #2)
