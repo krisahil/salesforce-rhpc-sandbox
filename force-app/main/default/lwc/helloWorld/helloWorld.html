@@ -16,4 +16,208 @@
     <pfe-avatar lwc:external name="Chris Hill" shape="rounded" pattern="triangles"></pfe-avatar>
   </div>
 
+  <div>
+    <h2>Pfe-tabs next</h2>
+    <pfe-tabs lwc:external >
+      <pfe-tab lwc:external role="heading" slot="tab" id="tab1">
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+      </pfe-tab>
+      <pfe-tab-panel lwc:external role="region" slot="panel">
+        <h2>Content 1</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">link</a> consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </pfe-tab-panel>
+      <pfe-tab lwc:external role="heading" slot="tab" id="tab2">
+        <h3>Tab</h3>
+        <h4>2</h4>
+      </pfe-tab>
+      <pfe-tab-panel lwc:external role="region" slot="panel">
+        <h2>Content 2</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">link</a> consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, <a href="#">link</a> consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </pfe-tab-panel>
+      <pfe-tab lwc:external role="heading" slot="tab" id="tab3">
+        <pfe-icon lwc:external icon="rh-atom"></pfe-icon>
+        <p>Tab 3</p>
+      </pfe-tab>
+      <pfe-tab-panel lwc:external role="region" slot="panel">
+        <h2>Content 3</h2>
+        <div class="floating-card">
+          <p>Lorem ipsum dolor sit amet, <a href="#">link</a> consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="floating-card">
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </pfe-tab-panel>
+    </pfe-tabs>
+  </div>
+
+  <div>
+    <h2>PFE nav next:</h2>
+    <pfe-navigation lwc:external data-analytics-region="mega menu" id="pfe-navigation">
+      <nav data-analytics-region="main nav" role="navigation" aria-label="Main Navigation" class="pfe-navigation" part="chroming-nav-inner">
+    
+        <!-- Logo -->
+        <div class="pfe-navigation__logo-wrapper" id="pfe-navigation__logo-wrapper" part="chroming-logo">
+          <a title="Go to your account dashboard" href="/account/dashboard" class="pfe-navigation__logo-link" data-analytics-text="Logo" data-analytics-category="Logo" data-analytics-level="1" part="chroming-logo__text">
+            <img part="chroming-logo__image" class="pfe-navigation__logo-image--small" src="https://connect.redhat.com/themes/custom/rhc_ui/src/images/svg/Logo-Red_Hat-Partner_Connect.svg" alt="Red Hat Partner Connect logo"/>
+          </a>
+        </div>
+        <!-- End: Logo -->
+    
+        <!-- Nav items -->
+        <ul class="pfe-navigation__menu" id="pfe-navigation__menu">
+                <li class="pfe-navigation__menu-item view_mode_has_three_columns">
+                              <a
+                  href="https://www.salesforce.com"
+                  class="pfe-navigation__menu-link"
+                  data-analytics-level="1"
+                  data-analytics-text="Sales"
+                  data-analytics-category="Sales"
+                  
+              >Sales</a>
+                  </li>
+                <li class="pfe-navigation__menu-item view_mode_has_three_columns">
+                              <a
+                  href="/TODO"
+                  class="pfe-navigation__menu-link"
+                  data-analytics-level="1"
+                  data-analytics-text="Training"
+                  data-analytics-category="Training"
+                  
+              >Training</a>
+                  </li>
+                <li class="pfe-navigation__menu-item view_mode_has_three_columns">
+                              <a
+                  href="/TODO"
+                  class="pfe-navigation__menu-link"
+                  data-analytics-level="1"
+                  data-analytics-text="Product certification"
+                  data-analytics-category="Product certification"
+                  
+              >Product certification</a>
+                  </li>
+                <li class="pfe-navigation__menu-item view_mode_has_three_columns">
+                              <a
+                  href="/TODO"
+                  class="pfe-navigation__menu-link"
+                  data-analytics-level="1"
+                  data-analytics-text="Marketing"
+                  data-analytics-category="Marketing"
+                  
+              >Marketing</a>
+                  </li>
+                <li class="pfe-navigation__menu-item view_mode_has_three_columns">
+                              <a
+                  href="/TODO"
+                  class="pfe-navigation__menu-link"
+                  data-analytics-level="1"
+                  data-analytics-text="My company"
+                  data-analytics-category="My company"
+                  
+              >My company</a>
+                  </li>
+                <li class="pfe-navigation__menu-item view_mode_has_three_columns">
+                              <span
+                  class="pfe-navigation__menu-link"
+                  data-analytics-level="1"
+                  data-analytics-text="Support"
+                  data-analytics-category="Support"
+              >Support</span>
+    
+              <div class="pfe-navigation__dropdown pfe-navigation__dropdown--3-column">
+                              <div>
+                    <h3
+                        data-analytics-level="2"
+                        data-analytics-text="Technology support"
+                        data-analytics-category="Support|Technology support"
+                    >Technology support</h3>
+                    <ul>
+                                          <li>
+                          <a
+                              href="/support/technology-partner"
+                              data-analytics-level="2"
+                              data-analytics-text="Partner acceleration desk"
+                              data-analytics-category="Support|Technology support"
+                              
+                          >Partner acceleration desk</a>
+                        </li>
+                                          <li>
+                          <a
+                              href="/en/support"
+                              data-analytics-level="2"
+                              data-analytics-text="Support overview page"
+                              data-analytics-category="Support|Technology support"
+                              
+                          >Support overview page</a>
+                        </li>
+                                      </ul>
+                  </div>
+                              <div>
+                    <h3
+                        data-analytics-level="2"
+                        data-analytics-text="Sales support"
+                        data-analytics-category="Support|Sales support"
+                    >Sales support</h3>
+                    <ul>
+                                          <li>
+                          <a
+                              href="/TODO"
+                              data-analytics-level="2"
+                              data-analytics-text="View sales support cases"
+                              data-analytics-category="Support|Sales support"
+                              
+                          >View sales support cases</a>
+                        </li>
+                                          <li>
+                          <a
+                              href="/TODO"
+                              data-analytics-level="2"
+                              data-analytics-text="Submit a sales support case"
+                              data-analytics-category="Support|Sales support"
+                              
+                          >Submit a sales support case</a>
+                        </li>
+                                      </ul>
+                  </div>
+                          </div>
+                  </li>
+              </ul>
+        <!-- End: Main nav items -->
+      </nav>
+    
+      <div slot="secondary-links">
+        <pfe-navigation-dropdown lwc:external dropdown-width="single" icon="web-icon-user" name="My account">
+          <ul>
+            <li><a href="/TODO">My profile</a></li>
+            <li><a href="/TODO">Change password</a></li>
+            <li><a href="/TODO">Email preferences</a></li>
+            <li><a href="/TODO">Sign out</a></li>
+          </ul>
+        </pfe-navigation-dropdown>
+      </div>
+    
+    </pfe-navigation>
+  </div>
+
 </template>
